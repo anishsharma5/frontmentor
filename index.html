@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ 
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Karla">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      font-family: Karla;
+      font-size: 20px;
+    }
+ .main_grid{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: auto;
+  border: 5px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+
+}
+.grid-1{
+  padding-right: 200px;
+  padding-left: 40px;
+  background-color:  hsl(204, 43%, 93%);
+}
+  .grid-2{
+  padding-left: 50px;
+  padding-top: 10px;
+    border-radius: border-box;
+    box-sizing: border-box;
+background-color: #35BDD0;
+  }
+
+ .span-2{
+  grid-column: span 2;
+  
+ 
+ }
+ .grid-3{
+  padding-top: 10px;
+  padding-right: 130px;
+  background-color: #DDD101;
+  padding-left: 60px;
+  
+ 
+ }
+ .grid-3 p{
+  margin-top: -17px;
+ }
+ .grid-3 h1{
+  margin-bottom: 40px;
+  font-size: 30px;
+ }
+ p{
+  font-family: Karla;
+  font-weight: 400;
+
+ 
+ }
+ .grid-1 h1{
+  font-size: 30px;
+  color:#1C8D73;
+ }
+ .grid-1 .margin{
+  margin-top: -17px;
+ 
+ }
+ .grid-2 p{
+  font-size: 20px;
+ }
+
+ button{
+  padding: 6px 30px;
+  margin-left: 15px;
+  background: #1C8D73;
+  color: #fff;
+ }
+ footer{
+margin-top: 870px;
+ }
+  </style>
+</head>
+<body>
+  <div class="main_grid">
+ <div class="grid-1 span-2">
+<h1>  Join our community</h1>
+
+  <p>30-day, hassle-free money back guarantee</p>
+
+ <p >Gain access to our full library of tutorials along with expert code reviews. 
+ <p class="margin"> Perfect for any developers who are serious about honing their skills.</p>
+</p>
+
+ </div>
+ <div class="grid-2">
+<p>  Monthly Subscription</p>
+<p>
+  &dollar;29 per month</p>
+
+ <p> Full access for less than &dollar;1 a day</p>
+
+ <button> Sign Up</button>
+ </div>
+
+<div class="grid-3">
+<h1>Why Us</h1>
+  <p>Tutorials by industry experts</p>
+  <p>Peer &amp; expert code review</p>
+  <p>  Coding exercises</p>
+  <p>  Access to our GitHub repos</p>
+  <p> Community forum</p>
+  <p>Flashcard decks</p>
+<p>New videos every week</p>
+
+ 
+  
+  
+</div>
+
+  </div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Anish Sharma</a>.
+    </p>
+  </footer>
+</body>
+</html>
